@@ -44,4 +44,13 @@ namespace ConsoleApp1
             MethodInfo method = type.GetMethod("MethodName");
         }
     }
+    class _GarbageCollection
+    {
+        //The garbage collector (GC) manages the allocation and release of memory in .NET framework.
+        //Garbage collection is one of the responsibility of CLR only.
+        //Generation: .NET framework has a machanism to decide which objects are no longer needed and that mechanism we call generations.
+        //Generation is a mechanism to collect the short-lived object more frequently than longer-lived object.
+        //Dispose and Finalize : Finalize method is called automatically by the garbage collector, But the Dispose method Is called explicitly by the code to release any unmanaged object.
+        //Yes, by calling GC.COLLECT() method we can force garbage collector to run, but this is not recommended, instead use Dispose method.
+    }
 }
